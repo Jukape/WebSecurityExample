@@ -7,9 +7,18 @@
         <servlet-name>default</servlet-name>
         <servlet-class>org.example.XSSServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>csrf</servlet-name>
+        <servlet-class>org.example.CSRFServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>/default</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>csrf</servlet-name>
+        <url-pattern>/csrf</url-pattern>
     </servlet-mapping>
 </web-app>
