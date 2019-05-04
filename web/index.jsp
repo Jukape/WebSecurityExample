@@ -1,0 +1,32 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: paul
+  Date: 4/30/19
+  Time: 11:13 AM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Insecure and secure XSS examples</title>
+</head>
+<body>
+<p>Examples of insecure and secure XSS pages:</p>
+<div>
+    <p>JSP Examples:</p>
+    <ul>
+        <li><a href="insecure_xss.jsp?xss_code=<script>alert('HACKED: this page is easily hacked')</script>">Insecure Xss
+            example</a></li>
+        <li><a href="secure_xss.jsp?xss_code=<script>alert('HACKED: this page is easily hacked')</script>">Secure Xss example</a></li>
+    </ul>
+</div>
+<div>
+    <p>Servlet Examples:</p>
+    <ul>
+        <li><a href="default?xss_mode=insecure&xss_code=<script>alert('HACKED: this page is easily hacked')</script>">Insecure Xss
+            example</a></li>
+        <li><a href="default?xss_mode=secure&xss_code=<script>alert('HACKED: this page is easily hacked')</script>">Secure Xss example</a></li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="WebSecurityExample:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebSecurityExample_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="WebSecurityExample/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="WebSecurityExample" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jstl:jstl:1.2" />
+          <element id="library" level="project" name="com.liferay:com.liferay.portal.security.antisamy:2.0.7" />
+          <element id="library" level="project" name="apache-xerces:xercesImpl:2.9.1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="dir-copy" path="$PROJECT_DIR$/web/META-INF" />
+      </element>
+    </root>
+  </artifact>
+</component>
